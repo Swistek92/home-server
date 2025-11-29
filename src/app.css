@@ -9,7 +9,20 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 0.5s linear, crazy 4s infinite ease-in-out;
+    position: absolute;
+  }
+  .App-logo1 {
+    animation: App-logo-spin infinite 0.5s linear, crazy1 2s infinite ease-in-out;
+    position: absolute;
+  }
+  .App-logo2 {
+    animation: App-logo-spin infinite 0.5s linear, crazy2 3s infinite ease-in-out;
+    position: absolute;
+  }
+  .App-logo3 {
+    animation: App-logo-spin infinite 0.5s linear, crazy3 3s infinite ease-in-out;
+    position: absolute;
   }
 }
 
@@ -35,4 +48,60 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Latanie po ekranie */
+@keyframes crazy {
+  0% {
+    top: 10%;
+    left: 10%;
+  }
+  20% {
+    top: 70%;
+    left: 20%;
+  }
+  40% {
+    top: 30%;
+    left: 80%;
+  }
+  60% {
+    top: 80%;
+    left: 60%;
+  }
+  80% {
+    top: 20%;
+    left: 40%;
+  }
+  100% {
+    top: 10%;
+    left: 10%;
+  }
+}
+@keyframes crazy1 {
+  0%   { top: 5%;  left: 5%; }
+  15%  { top: 80%; left: 10%; }
+  30%  { top: 10%; left: 85%; }
+  45%  { top: 60%; left: 70%; }
+  60%  { top: 85%; left: 40%; }
+  75%  { top: 20%; left: 50%; }
+  100% { top: 5%;  left: 5%; }
+}
+
+
+@keyframes crazy2 {
+  0%   { top: 50%; left: 5%; }
+  20%  { top: 10%; left: 60%; }
+  40%  { top: 80%; left: 30%; }
+  60%  { top: 25%; left: 90%; }
+  80%  { top: 70%; left: 70%; }
+  100% { top: 50%; left: 5%; }
+}
+
+@keyframes crazy3 {
+  0%   { top: 20%; left: 20%; }
+  20%  { top: 10%; left: 70%; }
+  40%  { top: 50%; left: 85%; }
+  60%  { top: 80%; left: 40%; }
+  80%  { top: 60%; left: 10%; }
+  100% { top: 20%; left: 20%; }
 }
